@@ -16,7 +16,7 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <header class="header section">
+    <header class="header">
       <div class="header-container container">
         <a class="logo" href="./index.html"
           ><span class="web">Web</span>Studio</a
@@ -24,10 +24,10 @@
         <nav class="navigation">
           <ul class="navbutton list">
             <li>
-              <a class="nav" href="./index.html">Студія</a>
+              <a class="nav current" href="./index.html">Студія</a>
             </li>
             <li>
-              <a class="nav current" href="./portfolio.html">Портфоліо</a>
+              <a class="nav" href="./portfolio.html">Портфоліо</a>
             </li>
             <li>
               <a class="nav" href="./index.html">Контакти</a>
@@ -36,12 +36,20 @@
         </nav>
         <ul class="contacts list">
           <li>
-            <a class="nav" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+            <a class="nav" href="mailto:info@devstudio.com">
+              <svg class="icon-contacts" width="16" height="12">
+                <use href="./images/hw-4/icons.svg#email"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="nav" href="tel:+380961111111">+380961111111</a>
+            <a class="nav" href="tel:+380961111111">
+              <svg class="icon-contacts" width="10" height="16">
+                <use href="./images/hw-4/icons.svg#smartphone"></use>
+              </svg>
+              +380961111111</a
+            >
           </li>
         </ul>
       </div>
@@ -52,23 +60,31 @@
           <h1 hidden>Gallery</h1>
           <ul class="portfolio-hero-section list">
             <li>
-              <button class="portfolio-button" type="button">Усі</button>
+              <button class="portfolio-button shadow" type="button">Усі</button>
             </li>
             <li>
-              <button class="portfolio-button" type="button">Веб сайти</button>
+              <button class="portfolio-button shadow" type="button">
+                Веб сайти
+              </button>
             </li>
             <li>
-              <button class="portfolio-button" type="button">Додатки</button>
+              <button class="portfolio-button shadow" type="button">
+                Додатки
+              </button>
             </li>
             <li>
-              <button class="portfolio-button" type="button">Дизайн</button>
+              <button class="portfolio-button shadow" type="button">
+                Дизайн
+              </button>
             </li>
             <li>
-              <button class="portfolio-button" type="button">Маркетинг</button>
+              <button class="portfolio-button shadow" type="button">
+                Маркетинг
+              </button>
             </li>
           </ul>
           <ul class="portfolio-images list">
-            <li>
+            <li class="shadow">
               <img
                 width="370"
                 src="./images/technokryak.jpg"
@@ -79,7 +95,7 @@
                 <p class="image-profile">Веб-сайт</p>
               </div>
             </li>
-            <li>
+            <li class="shadow">
               <img
                 width="370"
                 src="./images/neworleanvsgoldenstar.jpg"
@@ -90,7 +106,7 @@
                 <p class="image-profile">Дизайн</p>
               </div>
             </li>
-            <li>
+            <li class="shadow">
               <img
                 width="370"
                 src="./images/seafood.jpg"
@@ -101,7 +117,7 @@
                 <p class="image-profile">Додаток</p>
               </div>
             </li>
-            <li>
+            <li class="shadow">
               <img
                 width="370"
                 src="./images/primeproject.jpg"
@@ -112,7 +128,7 @@
                 <p class="image-profile">Маркетинг</p>
               </div>
             </li>
-            <li>
+            <li class="shadow">
               <img
                 width="370"
                 src="./images/boxesproject.jpg"
@@ -123,7 +139,7 @@
                 <p class="image-profile">Додаток</p>
               </div>
             </li>
-            <li>
+            <li class="shadow">
               <img
                 width="370"
                 src="./images/inspirationhasnoborders.jpg"
@@ -134,7 +150,7 @@
                 <p class="image-profile">Веб-сайт</p>
               </div>
             </li>
-            <li>
+            <li class="shadow">
               <img
                 width="370"
                 src="./images/limitededition.jpg"
@@ -145,7 +161,7 @@
                 <p class="image-profile">Дизайн</p>
               </div>
             </li>
-            <li>
+            <li class="shadow">
               <img
                 width="370"
                 src="./images/labproject.jpg"
@@ -156,7 +172,7 @@
                 <p class="image-profile">Маркетинг</p>
               </div>
             </li>
-            <li>
+            <li class="shadow">
               <img
                 width="370"
                 src="./images/growingbussiness.jpg"
@@ -174,32 +190,61 @@
     <footer>
       <div class="footer sections">
         <div class="container">
-          <a class="footer-logo" href="./index.html"
-            ><span class="web">Web</span>Studio</a
-          >
-          <address class="footer-address">
-            <ul class="footer-contacts list">
-              <li class="footer-list">
-                <a
-                  class="address-link"
-                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
-              </li>
-              <li class="footer-list">
-                <a class="footer-info" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li>
-                <a class="footer-info" href="tel:+380961111111"
-                  >+380961111111</a
-                >
-              </li>
-            </ul>
-          </address>
+          <div class="footer-basic">
+            <div class="footer-info">
+              <a class="footer-logo" href="./index.html"
+                ><span class="web">Web</span>Studio</a
+              >
+              <address class="footer-address">
+                <ul class="footer-contacts list">
+                  <li class="footer-list">
+                    <a
+                      class="address-link"
+                      href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      >м. Київ, пр-т Лесі Українки, 26</a
+                    >
+                  </li>
+                  <li class="footer-list">
+                    <a class="footer-info" href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-info" href="tel:+380961111111"
+                      >+380961111111</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="footer-sots">
+              <h3 class="footer-header">Приєднуйтесь</h3>
+              <ul class="footer-actions">
+                <li class="footer-sots-item">
+                  <svg class="footer-sots-icon">
+                    <use href="./images/hw-4/icons.svg#instagram"></use>
+                  </svg>
+                </li>
+                <li class="footer-sots-item">
+                  <svg class="footer-sots-icon">
+                    <use href="./images/hw-4/icons.svg#twitter"></use>
+                  </svg>
+                </li>
+                <li class="footer-sots-item">
+                  <svg class="footer-sots-icon">
+                    <use href="./images/hw-4/icons.svg#facebook"></use>
+                  </svg>
+                </li>
+                <li class="footer-sots-item">
+                  <svg class="footer-sots-icon">
+                    <use href="./images/hw-4/icons.svg#linkedin"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
